@@ -63,4 +63,3 @@ A simple and user-friendly **Login System** built with **HTML**, **CSS**, and **
    - Displays a success message.
    - Redirects to the **Login Page**.
 
-## File Structure
