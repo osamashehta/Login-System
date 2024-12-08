@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <!-- Login Page  -->
+
+    <section
+      id="main"
+      class="container d-flex justify-content-center align-items-center"
+    >
+      <div id="login" class="login px-4 py-4 rounded-3 shadow-lg">
+        <h2 class="text-center my-3">Login</h2>
+        <form class="formContainer mx-3">
+          <div class="mb-4">
+            <label for="signInEmail" class="form-label"
+              >Email</label
+            >
+            <input
+              type="email"
+              class="form-control py-2"
+              id="signInEmail"
+              placeholder=""
+            />
+            <span id="emailRegistered" class="text-danger d-none"
+              >You are not registered. Please sign up.</span
+            >
+          </div>
+
+          <div class="mb-4">
+            <label for="signInPassword" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control py-2"
+              id="signInPassword"
+              placeholder=""
+            />
+            <span id="passwordCorrect" class="text-danger d-none"
+              >Incorrect password. Please try again.</span
+            >
+          </div>
+          <button
+            id="signInBtn"
+            type="button"
+            class="btn btn-primary w-100 py-2 fw-bold"
+          >
+            Sign In
+          </button>
+          <p>
+            Don't have an account?
+            <button
+              type="button"
+              id="signUpPage"
+              class="border-0 bg-white text-primary text-decoration-none"
+            >
+              Sign Up
+            </button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <script src="javaScript/login.js"></script>
+  </body>
+</html>

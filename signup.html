@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+  </head>
+  <body>
+    <!-- SignUp Page  -->
+
+    <section
+      id="main"
+      class="container d-flex justify-content-center align-items-center"
+    >
+      <div id="signup" class="signup px-3 rounded-3 shadow-lg mt-5">
+        <h2 class="text-center my-2">Create Account</h2>
+        <form class="formContainer mx-3">
+          <div class="mb-3">
+            <label for="signUpName" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="signUpName"
+              placeholder=""
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="signUpEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="signUpEmail"
+              placeholder=""
+            />
+            <span id="emailExist" class="text-danger d-none"
+              >User already exists</span
+            >
+            <span id="emailValid" class="text-danger d-none"
+              >Invalid email address format, Email must be in the format:
+              user@example.com</span
+            >
+          </div>
+
+          <div class="mb-3">
+            <label for="signUpPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="signUpPassword"
+              placeholder=""
+            />
+            <span id="passwordValid" class="text-danger d-none"
+              >Invalid password format, Must be at least 8 characters long,
+              include at least one letter and one number.</span
+            >
+          </div>
+
+          <div class="mb-3">
+            <label for="signUpConfirm" class="form-label"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="signUpConfirm"
+              placeholder=""
+            />
+            <span id="matchPassword" class="text-danger d-none"
+              >Passwords do not match</span
+            >
+          </div>
+
+          <button
+            id="signUpBtn"
+            type="button"
+            class="btn btn-primary w-100 py-2 fw-bold"
+          >
+            Sign Up
+          </button>
+          <p>
+            Already have an account?
+            <button
+              type="button"
+              id="signInPage"
+              class="border-0 bg-white text-primary text-decoration-none"
+            >
+              Sign In
+            </button>
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <script src="javaScript/signup.js"></script>
+  </body>
+</html>

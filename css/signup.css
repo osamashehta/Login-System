@@ -1,0 +1,19 @@
+body {
+  font-family: monospace;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #f3f4f6;
+  overflow: auto;
+}
+
+#main {
+  flex: 1;
+}
+
+#signup {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 450px;
+}
